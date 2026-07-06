@@ -242,3 +242,43 @@ footer{
 .row span:first-child{
     color:var(--muted);
 }
+footer{
+    border-top:1px solid var(--border);
+    padding:40px 0;
+    color:var(--muted);
+    font-size:.95rem;
+}
+
+footer .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+footer{
+    color:var(--muted);
+}
+footer a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-left:8px;
+    color:white;
+    text-decoration:none;
+
+    transition:0.2s ease;
+    opacity:0.85;
+}
+
+footer a:hover{
+    opacity:1;
+    transform:translateY(-2px);
+}
+
+footer i{
+    color:white;
+    font-size:1.2rem;
+}

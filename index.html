@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeWaves</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<nav>
+    <div class="logo">JoeWaves</div>
+
+    <div class="links">
+        <a class="button" href="setup.html">Setup</a>
+
+        <a class="button"
+           href="https://discord.com/users/1365777371340214383"
+           target="_blank"
+           aria-label="Discord">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a class="button"
+           href="https://x.com/liltimmyonyt"
+           target="_blank"
+           aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>JoeWaves.</h1>
+    <p>far from your average joe.</p>
+</div>
+
+</div>
+</header>
+
+<main class="container">
+
+<section>
+<h2>About</h2>
+
+<p>
+Professionally hating on Beyerdynamic owners. Audio nerd, keyboard addict, mouse enthusiast. Terminally online, permanently tweaking my setup, never satisfied.
+</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+<input
+id="subject"
+type="text"
+placeholder="Subject">
+
+<textarea
+id="body"
+rows="6"
+placeholder="Write your message..."></textarea>
+
+<button class="button" onclick="sendEmail()">
+    Send Email
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+© 2026 JoeWaves and Callen Flynn
+</div>
+</footer>
+
+<script>
+function sendEmail() {
+    const subject = encodeURIComponent(document.getElementById("subject").value);
+    const body = encodeURIComponent(document.getElementById("body").value);
+
+    window.location.href =
+        `mailto:keyedbyjoe@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+
+</body>
+</html>

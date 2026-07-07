@@ -46,9 +46,10 @@ nav{
     font-size:1rem;
 }
 
-.links{
-    display:flex;
-    gap:12px;
+.links {
+    display: flex;
+    justify-content: flex-end; /* Pushes both buttons to the far right */
+    gap: 15px;                 /* Adds space between the two buttons */
 }
 
 .button{

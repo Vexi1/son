@@ -1,104 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JoeWaves</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JoeWaves | Peripheral Advisor & Mousepad Specialist</title>
+  <meta name="description" content="JoeWaves helps gamers and creators choose the perfect mousepad and peripherals with personalized advice and curated recommendations." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<header>
-<div class="container">
-
-<nav>
-  <div class="hero">
-     <h1>JoeWaves</h1>
-     <p>far from your average joe.</p>
-   </div>
-
-    
-<div class="links">
-    <a class="button" href="https://joewave.substack.com/">Blog</a>
-    <a class="button" href="setup.html">Setup</a>
-    <a class="button" href="https://docs.google.com/document/d/17Xw3Wom78ujpkAJZyJKIcRoASpVefntBpOUFqOS4HFQ/edit?tab=t.0">Testing</a>
-</div>
-
-</div>
-</header>
-
-<main class="container">
-
-<section>
-<h2>About</h2>
-
-<p>
-Professionally hating on Beyerdynamic owners. Audio nerd, keyboard addict, mouse enthusiast. Terminally online, permanently tweaking my setup, never satisfied.
-</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-
-<div class="contact-box">
-
-<input
-id="subject"
-type="text"
-placeholder="Subject">
-
-<textarea
-id="body"
-rows="6"
-placeholder="Write your message..."></textarea>
-
-<button class="button" onclick="sendEmail()">
-    Send Email
-</button>
-
-</div>
-
-</section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <span>© 2026 JoeWaves and Callen Flynn </span>
-
-    <div>
-      <a href="https://discord.com/users/1365777371340214383" target="_blank">
-        <i class="fa-brands fa-discord fa-lg"></i>
-      </a>
-
-      <a href="https://x.com/liltimmyonyt" target="_blank">
-        <i class="fa-brands fa-x-twitter fa-lg"></i>
-      </a>
-            <a href="https://www.youtube.com/@wavesjoe" target="_blank">
-        <i class="fa-brands fa-youtube fa-lg"></i>
-      </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">JW</div>
+        <div>
+          <p class="eyebrow">JoeWaves</p>
+          <h1>JoeWaves</h1>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#mousepads">Mousepads</a>
+        <a href="setup.html">Setup</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</footer>
+  </header>
 
-<script>
-function sendEmail() {
-    const subject = encodeURIComponent(document.getElementById("subject").value);
-    const body = encodeURIComponent(document.getElementById("body").value);
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Peripheral advising made simple</p>
+          <h2>Find the ideal Peripherals for your needs.</h2>
+          <p>At JoeWaves, we pair product knowledge with real-world experience so you can upgrade your desk with confidence.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Book a Consultation</a>
+            <a class="button button-secondary" href="#mousepads">View Mousepads</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-top">
+            <span>Featured Service</span>
+            <h3>Mousepad pairing & optimization</h3>
+          </div>
+          <p>Personalized recommendations based on your grip, desk setup, and playing style. Discover ergonomic, cloth, and hard-surface mousepads picked for peak performance.</p>
+          <ul class="info-list">
+            <li>Performance analysis</li>
+            <li>Surface compatibility</li>
+            <li>Durability & style guidance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    window.location.href =
-        `mailto:keyedbyjoe@gmail.com?subject=${subject}&body=${body}`;
-}
-</script>
+    <section id="about" class="section section-light">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">Who we are</p>
+          <h2>JoeWaves is your peripheral advisor</h2>
+          <p>As a dedicated peripheral specialist, JoeWaves helps gamers, creators, and professionals choose peripherals that feel seamless from the first click. We combine product knowledge with practical recommendations so your desk feels tailored for your work and play.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <strong>2+</strong>
+            <span>Years advising users</span>
+          </div>
+          <div class="stat-card">
+            <strong>20+</strong>
+            <span>Mousepads evaluated</span>
+          </div>
+          <div class="stat-card">
+            <strong>100%</strong>
+            <span>Confidence-backed recommendations</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="specialties" class="section section-dark">
+      <div class="container">
+        <p class="eyebrow">Specialties</p>
+        <h2>Advising on the peripherals that matter most</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Mousepads</h3>
+            <p>From soft cloth pads to hard hybrid surfaces, we recommend mousepads based on control, comfort, and longevity.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Budget</h3>
+            <p>We give recommendations based on options that suit your budget without compromising on quality or preformance.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Desk setup</h3>
+            <p>Design your workspace for comfort and consistency, including pad placement, desk space, and cable management.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mousepads" class="section">
+      <div class="container">
+        <p class="eyebrow">Featured</p>
+        <h2>Mousepad recommendations</h2>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-image product-image-soft">Slower</div>
+            <h3>Slower Pads</h3>
+            <p>Slower (control) mousepads are more suited for Tactical FPS games. They minimize shaky aim due to high static friction so you can hold angles, and allow for fast stops after flicks due to higher dynamic friction. 
+</p>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-hard">Balanced</div>
+            <h3>Balanced Pads</h3>
+            <p>Balanced pads are preferred by most people. They can be used for any game as they allow for some control and stopping power without lacking speed and a smooth glide.	
+</p>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-luxury">Speed</div>
+            <h3>Speed Pads</h3>
+            <p>Faster (speed) pads are well suited for tracking heavy games. They try to reduce friction as much as possible allowing for a very smooth consistent glide and very minimal stopping power. 
+</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="kinetic-friction">
+      <div class="container">
+        <p class="eyebrow">Innovation</p>
+        <h2>Revolutionary work with kinetic friction</h2>
+        <p>JoeWaves had taken insporation from the principles of kinetic friction to put a number to a mousepad speeds. We took insporation from one of a fellow friend Wifi and created our own formula to calculate the "speed" of a mousepad.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Let's connect</p>
+          <h2>Start your personalized advisory session</h2>
+          <p>Whether you want help choosing the right mousepad or optimizing your setup, JoeWaves provides tailored guidance that fits your preferences and budget.</p>
+          <ul class="contact-details">
+            <li><strong>Email:</strong> keyedbyjoe@gmail.com</li>
+            <li><strong>Availability:</strong> Cronically Online</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="mailto:keyedbyjoe@gmail.com" method="GET" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your setup or goals" required></textarea>
+          <button type="submit" class="button button-primary">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 JoeWaves.</p>
+    <a href="https://discord.com/users/1365777371340214383" target="_blank">
+        <i class="fa-brands fa-discord fa-lg">Discord</i>
+    </a>
+    </div>
+  </footer>
 </body>
 </html>
+
